@@ -25,6 +25,4 @@ public class GameResource {
 		return ResponseEntity.ok().body(list);		
 	}
 
-	PAREI EM 1h:35m:30s
-	
 }
