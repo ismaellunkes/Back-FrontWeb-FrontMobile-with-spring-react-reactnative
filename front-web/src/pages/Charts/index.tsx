@@ -4,7 +4,7 @@ import './styles.css';
 import { barOptions, pieOptions } from './chart-options';
 import Chart from "react-apexcharts";
 import Axios from 'axios';
-import {buildBarSeries, getGenderChartData, getPlatformChartData} from './helpers';
+import { buildBarSeries, getGenderChartData, getPlatformChartData } from './helpers';
 
 
 type PieChartData = {
@@ -33,17 +33,16 @@ const Charts = () => {
     useEffect(() => {
         async function getData() {
             const recordsResponse = await Axios.get(`${BASE_URL}/records`);
-            const gamesResponse = await Axios.get(`${BASE_URL}/games`);            
-            
-            const barData = buildBarSeries (gamesResponse.data, recordsResponse. data.content);
+            const gamesResponse = await Axios.get(`${BASE_URL}/games`);
+
+            const barData = buildBarSeries(gamesResponse.data, recordsResponse.data.content);
             setBarChartData(barData);
 
-            const platformChartData = getPlatformChartData (recordsResponse.data.content)
+            const platformChartData = getPlatformChartData(recordsResponse.data.content)
             setPlatformData(platformChartData);
 
             const genderChartData = getGenderChartData(recordsResponse.data.content);
             setGenderData(genderChartData);
-
         }
 
         getData();
