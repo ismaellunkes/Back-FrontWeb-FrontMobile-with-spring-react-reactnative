@@ -1,4 +1,4 @@
-import { Platform } from "../Records/types";
+import { Platform } from "../records/types";
 
 export type Game = {
     id: number;
