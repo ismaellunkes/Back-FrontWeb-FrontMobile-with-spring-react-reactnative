@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
-import Charts from './pages/Charts';
-import Home from './pages/Home';
-import Records from './pages/Records';
+import Header from '../src/components/Header';
+import Charts from '../src/pages/Charts';
+import Home from '../src/pages/Home';
+import Records from '../src/pages/Records';
 
 const Routes = () => (
     <BrowserRouter>
