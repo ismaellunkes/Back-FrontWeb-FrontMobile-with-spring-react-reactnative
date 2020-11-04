@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './components/header';
+import Header from './components/Header';
 import Charts from './pages/Charts';
 import Home from './pages/Home';
 import Records from './pages/Records';
@@ -13,7 +13,7 @@ const Routes = () => (
                 <Home />
             </Route>
             <Route path="/records">
-                <Records/>
+                <Records />
             </Route>
             <Route path="/charts">
                 <Charts />
