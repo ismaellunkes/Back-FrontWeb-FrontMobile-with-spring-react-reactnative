@@ -1,4 +1,4 @@
-Link do app em produção: https://deploy001.netlify.app/records
+Link do app em produção: https://deploy001.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
