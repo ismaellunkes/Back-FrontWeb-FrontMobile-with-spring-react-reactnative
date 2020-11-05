@@ -1,4 +1,4 @@
-Link do app em produção: https://deploy001.netlify.app
+Link do app em produção: https://deploy001.netlify.app (Atenção: é possível que o backend da aplicação demore alguns segundos para iniciar, pois o mesmo pode (deve) estar em modo de hibernação, portando aguarde até a reativação para exibição dos dados na table e nos gráficos)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
